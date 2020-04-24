@@ -1,0 +1,8 @@
+.read-blog {
+  display: inline-block;
+  background-color: #008FF0;
+  color: #FFF;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 6px;
+}
