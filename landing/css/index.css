@@ -1,0 +1,26 @@
+.main-page {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.main-page__img {
+  width: 300px;
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 8px;
+  padding: 4px;
+  border: 1px solid #5F5F5F;
+  border-radius: 4px;
+}
+
+.main-page__text {
+  text-align: justify;
+}
+
+@media (min-width: 0px) and (max-width: 479px) {
+  .main-page__img {
+    width: calc(100% - 8px);
+    padding: 4px;
+  }
+  
+}
