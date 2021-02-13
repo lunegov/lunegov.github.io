@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Туризм в заповедник</title>
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/calc.css">
 </head>
 <body>
   <!-- Заголовок сайта  -->
@@ -28,20 +29,38 @@
   <!-- Основная часть сайта  -->
   <main>
     <div class="main-container">
-      <h1 class="main-title">Фотографии</h1>
-      <div class="photo-container">
-        <img src="./img/img-1.jpg" class="photo" />
-        <img src="./img/img-2.jpg" class="photo" />
-        <img src="./img/img-3.jpg" class="photo" />
-        <img src="./img/img-4.jpg" class="photo" />
-        <img src="./img/img-2.jpg" class="photo" />
-        <img src="./img/img-3.jpg" class="photo" />
-        <img src="./img/img-1.jpg" class="photo" />
-        <img src="./img/img-4.jpg" class="photo" />
-        <img src="./img/img-3.jpg" class="photo" />
-        <img src="./img/img-1.jpg" class="photo" />
-        <img src="./img/img-2.jpg" class="photo" />
-      </div>
+      <h1 class="main-title">Расчитать</h1>
+      
+      <table class="calc-table">
+        <tr>
+          <td colspan="4" class="input-field">0</td>
+        </tr>
+        <tr>
+          <td onclick="numberIn('7')">7</td>
+          <td onclick="numberIn('8')">8</td>
+          <td onclick="numberIn('9')">9</td>
+          <td onclick="doAction('+')" class="action">+</td>
+        </tr>
+        <tr>
+          <td onclick="numberIn('4')">4</td>
+          <td onclick="numberIn('5')">5</td>
+          <td onclick="numberIn('6')">6</td>
+          <td onclick="doAction('-')" class="action">-</td>
+        </tr>
+        <tr>
+          <td onclick="numberIn('1')">1</td>
+          <td onclick="numberIn('2')">2</td>
+          <td onclick="numberIn('3')">3</td>
+          <td onclick="doAction('*')" class="action">*</td>
+        </tr>
+        <tr>
+          <td class="action" onclick="clearIn()">С</td>
+          <td onclick="numberIn('0')">0</td>
+          <td onclick="calculate()" class="action">=</td>
+          <td onclick="doAction('/')" class="action">/</td>
+        </tr>
+      </table>
+
     </div>
   </main>
 
@@ -50,5 +69,8 @@
     <button class="footer-btn" onclick="location.href='order.html';">Обратная связь</button>
     <p class="footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius corporis harum, illo ea, voluptatum aspernatur necessitatibus nihil sed laboriosam mollitia voluptatem, iste error ipsa. Ducimus ratione illum est obcaecati ipsum atque minima fugit, quibusdam possimus, explicabo quaerat fugiat velit itaque.</p>
   </footer>
+
+  <script src="./js/calc.js"></script>
+
 </body>
 </html>

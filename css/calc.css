@@ -1,0 +1,20 @@
+.calc-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.calc-table td {
+  padding: 8px 12px;
+  border: 1px solid #c2c2c2;
+  cursor: pointer;
+  text-align: center;
+}
+
+td.input-field {
+  text-align: right;
+}
+
+td.action {
+  background-color: #C4A46E;
+  color: #fff;
+}
